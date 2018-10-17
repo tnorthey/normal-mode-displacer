@@ -1,1 +1,4 @@
-# normal_mode_displacer
+# random_displacer
+
+
+![watermodes](watermodes.gif)
