@@ -103,7 +103,7 @@ Then run,
 ```python
 python2.7 run.py
 ```
-and 1 xyz file will be created in the xyz directory, which is the displaced coordinates.
+and 1 xyz file will be created in the xyz directory, which is the displaced coordinates. Set a = -1 to move in the opposite direction along the mode.
 
 
 
