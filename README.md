@@ -1,4 +1,4 @@
-# random_displacer
+# normal\_mode\_displacer
 
 ## Description
 Displace atomic coordinates along molecular normal modes.
