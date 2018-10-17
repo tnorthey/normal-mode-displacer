@@ -13,15 +13,15 @@ def read_displacements(Nat,imode):
   elif Nat>2:
     Nmode=N-6
   else:
-    print "ERROR: Something wrong with number of atoms"
-    print "Are there <2 atoms?"
+    print("ERROR: Something wrong with number of atoms")
+    print("Are there <2 atoms?")
     return
  
   if imode>=1 and imode<=Nmode:
     pass
     #print "Reading displacements for mode " + str(imode)
   else:
-    print 'ERROR: imode out of range (1,Nmode).'
+    print('ERROR: imode out of range (1,Nmode).')
     return
   # Known pattern of g09 frequencies output file...
   row = int((imode-1)/5)

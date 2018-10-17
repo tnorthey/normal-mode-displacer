@@ -12,7 +12,7 @@ a = 1
 freqcm1 = [1722.4496, 3799.4476, 3925.0128] 
 
 # selected modes
-Modes = 1
+Modes = [1]
 #nmodes = len(freqcm1)
 #Modes = list(range(1, nmodes + 1 ))  # all modes
 
