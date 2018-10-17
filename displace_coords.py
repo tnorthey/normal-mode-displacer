@@ -17,7 +17,7 @@ def displace_coords(Coords,imode,freqcm1,Factor):
   Displc=read_displacements(Nat,imode)		# Read normal mode displacements (vector of length 3*Nat)
   mi = Z2m('equilibrium.xyz')
   D=[]
-  for i in range( 3 * Nat ):			# Loop over coordinates
+  for i in range( 3 * int(Nat) ):			# Loop over coordinates
     mass = mi[ int( (i - 1) / 3 ) ]  # int rounds down by default
     displacement_constant = (mass**.5 * 0.172*freqcm1**.5)**-1
     #extra_factor = 1e5*freqcm1**-3

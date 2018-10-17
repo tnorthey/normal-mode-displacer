@@ -8,7 +8,7 @@ Displace atomic coordinates along molecular normal modes.
 ## Requirements
 
 - Gaussian quantum chemistry package
-- python2.7
+- python2.7 or python3
 
 ## How to use
 

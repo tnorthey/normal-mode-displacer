@@ -8,10 +8,11 @@ def read_xyz(fname):
   with open(fname,'r') as f:			# open file   
     AtomList=[]; Coords=[]
     c=0
-    f.next()					# Skip line
     for line in f:
       c+=1				
       if c==1:
+        pass
+      elif c==2:
         comment = line
       else:
         AtomList.append(line.split()[0]) 	# List of atomic labels
@@ -35,7 +36,7 @@ def write_xyz(AtomList,Coords,fname,comment):
     f.write(comment + '\n')				# The second line is blank or contains a title string (convention)
     for i in range(3*Nat):				# Loop over vectors of lentgh 3*Nat
       if i%3==0:					# Indices 0,3,6,...
-        Atom=AtomList[i/3]				# Read atom labels (at indices 0,1,2,... every i=0,3,6,...)
+        Atom=AtomList[int(i/3)]				# Read atom labels (at indices 0,1,2,... every i=0,3,6,...)
         x = Coords[i]				# x coordinate
       elif (i-1)%3==0:				# Indices 1,4,7,...
         y = Coords[i]				# y coordinate
