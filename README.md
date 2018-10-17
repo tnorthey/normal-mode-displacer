@@ -82,13 +82,13 @@ Edit variables.py to look like,
 
 ```python
 # Number of random geometries to generate
-N = 100
+N = 1
 
 # switch on (1) or off (0) random displacements
 randm = 0
 
 # random number between -a and a to displace along each mode
-a = 3
+a = 1
 
 # frequencies (cm-1) of selected modes
 freqcm1 = [1722.4496, 3799.4476, 3925.0128]
