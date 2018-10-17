@@ -13,8 +13,11 @@ for j in range(N):  # loop N times
   D=R0  # Starting coordinates
   for i in range(len(Modes)):  # Loop over modes
     imode=Modes[i]  # Mode number
-    value = random()  # random value between 0 and 1
-    Factor = -a + ( value * 2 * a )  # random value in range [-a,a]
+    if randm==1:
+      value = random()  # random value between 0 and 1
+      Factor = -a + ( value * 2 * a )  # random value in range [-a,a]
+    else:
+      Factor = a
     D = displace_coords(D,imode,freqcm1[i],Factor)	# Displace coordinates along mode 'imode' by 'Factor'
   x=len(str(N))
   frmat="%0" + str(x) + "d"
