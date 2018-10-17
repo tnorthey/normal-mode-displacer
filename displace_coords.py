@@ -20,6 +20,8 @@ def displace_coords(Coords,imode,freqcm1,Factor):
   for i in range( 3 * Nat ):			# Loop over coordinates
     mass = mi[ int( (i - 1) / 3 ) ]  # int rounds down by default
     displacement_constant = (mass**.5 * 0.172*freqcm1**.5)**-1
+    #extra_factor = 1e5*freqcm1**-3
+    #D.append( Coords[i] + extra_factor * displacement_constant * Factor * Displc[i] ) 	# Displaced coordinates
     D.append( Coords[i] + displacement_constant * Factor * Displc[i] ) 	# Displaced coordinates
   ################################################## 
   return D

@@ -3,7 +3,7 @@
 N = 1000
 
 # random number between -x and x to displace along each mode
-x = 3
+a = 3
 
 # frequencies (cm-1) of selected modes
 freqcm1 = [ 1722.4496, 3799.4476, 3925.0128] 
