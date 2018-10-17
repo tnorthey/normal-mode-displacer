@@ -42,12 +42,12 @@ To begin creating new geometries from this, open `variables.py':
 
 ```python
 # Number of random geometries to generate
-N = 100
+N = 1000
 
 # switch on (1) or off (0) random displacements
 randm = 1
 
-# random number between -a and a to displace along each mode
+# if randm is on the random displacement will be in range [-a,a], if randm is off it will displace by exactly a
 a = 3
 
 # frequencies (cm-1) of selected modes
@@ -87,11 +87,11 @@ N = 1
 # switch on (1) or off (0) random displacements
 randm = 0
 
-# random number between -a and a to displace along each mode
+# if randm is on the random displacement will be in range [-a,a], if randm is off it will displace by exactly a
 a = 1
 
 # frequencies (cm-1) of selected modes
-freqcm1 = [1722.4496, 3799.4476, 3925.0128]
+freqcm1 = [1722.4496, 3799.4476, 3925.0128] 
 
 # selected modes
 Modes = 1
