@@ -1,5 +1,4 @@
 *.pyc
 __pycache__
-xyz/*
 *.log
 g09/.swp
