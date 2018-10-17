@@ -14,7 +14,7 @@ Displace atomic coordinates along molecular normal modes.
 
 ### Files
 
-1. equilibrium.xyz, the equilibrium geometry (lowest energy geometry from an opt calculation).
+1. equilibrium.xyz, the starting geometry.
 
 2. normalmodes.txt, contains the normal modes from a Gaussian (g09) calculation with freq=hpmodes option enabled.
 
@@ -36,7 +36,7 @@ No need to edit these:
 
 ### Usage
 
-First run a Gaussian (g09) calculation with "freq=hpmodes". Then create the file 'normalmodes.txt' from the frequencies section of the .log file. And make sure 'equilibrium.xyz' is the optimised geometry from the same .log file. An example calculation for water (input file and resulting log file) are in the g09 directory.
+First run a Gaussian (g09) calculation with "freq=hpmodes". Then create the file 'normalmodes.txt' from the frequencies section of the .log file. Make sure 'equilibrium.xyz' is the starting geometry you want (probably the optimised geometry from the same .log file, but it doesn't have to be). An example calculation for water (input file and resulting log file) are in the g09 directory.
 
 To begin creating new geometries from this, open `variables.py':
 
