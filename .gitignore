@@ -2,3 +2,4 @@
 __pycache__
 *.log
 g09/.swp
+xyz/*.xyz
