@@ -1,7 +1,7 @@
 # normal\_mode\_displacer
 
 ## Description
-Displace atomic coordinates along molecular normal modes.
+Displace atomic coordinates along molecular normal modes. Works for any molecule with g09 freq=hpmodes and equilibrium.xyz starting geometry. Water is shown as an example below.
 
 ![watermodes](watermodes.gif)
 
@@ -36,7 +36,7 @@ No need to edit these:
 
 ### Usage
 
-First run a Gaussian (g09) calculation with "freq=hpmodes". Then create the file 'normalmodes.txt' from the frequencies section of the .log file. Make sure 'equilibrium.xyz' is the starting geometry you want (probably the optimised geometry from the same .log file, but it doesn't have to be). 
+First run a Gaussian (g09) calculation with "freq=hpmodes". Then manually extract the file 'normalmodes.txt' from the frequencies section of the .log file. Make sure 'equilibrium.xyz' is the starting geometry you want (probably the optimised geometry from the same .log file, but it doesn't have to be). 
 
 Define the variables in `variables.py':
 
